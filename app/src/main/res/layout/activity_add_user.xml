@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".Add_User">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Name -->
+            <EditText
+                android:id="@+id/signup_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/baseline_person_pin_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/name"
+                android:padding="12dp"
+                android:textColor="@color/black" />
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <!-- Phone -->
+            <EditText
+                android:id="@+id/signup_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/baseline_phone_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="12dp"
+                android:textColor="@color/black" />
+
+            <!-- School Name -->
+            <EditText
+                android:id="@+id/signup_schoolname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/baseline_school_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/school_name"
+                android:padding="12dp"
+                android:textColor="@color/black" />
+
+            <!-- Password -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/signup_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/password"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword" />
+                <ImageView
+                    android:id="@+id/togglePassword"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_visibility_off_24"
+                    android:padding="4dp"/>
+            </RelativeLayout>
+
+            <!-- Confirm Password -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/signup_cpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Confirm Password"
+                    android:padding="12dp"
+                    android:paddingEnd="48dp"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword" />
+                <ImageView
+                    android:id="@+id/toggleCPassword"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_visibility_off_24"
+                    android:padding="4dp"/>
+            </RelativeLayout>
+
+            <!-- Status Spinner -->
+            <Spinner
+                android:id="@+id/spinner_status"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:spinnerMode="dropdown"/>
+
+            <!-- Role Spinner -->
+            <Spinner
+                android:id="@+id/spinner_role"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:spinnerMode="dropdown"/>
+
+            <!-- Add Button -->
+            <Button
+                android:id="@+id/signup_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:text="ADD"
+                android:textSize="18sp"
+                android:backgroundTint="@color/lavender"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

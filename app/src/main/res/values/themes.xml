@@ -1,15 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Education" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-         <item name="colorPrimary">@color/lavender</item>
+    <!-- Base application theme (Always Light) -->
+    <style name="Base.Theme.Education" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your light theme here -->
+        <item name="colorPrimary">@color/lavender</item>
         <item name="colorPrimaryVariant">@color/lavender</item>
         <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
 
-        <!--secondary brand color-->
+        <!-- Secondary brand color -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Prevent Android from auto-darkening -->
+        <item name="android:forceDarkAllowed">false</item>
     </style>
 
     <style name="Theme.Education" parent="Base.Theme.Education" />
