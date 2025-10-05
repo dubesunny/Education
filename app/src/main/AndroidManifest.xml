@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <!-- Needed for Firebase to connect to the internet -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- Optional but useful for network checks -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Optional but useful for network checks -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,6 +15,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Education"
         tools:targetApi="31">
+        <activity
+            android:name=".Course"
+            android:exported="false" />
+        <activity
+            android:name=".Add_User"
+            android:exported="false" />
+        <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
@@ -32,9 +44,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
