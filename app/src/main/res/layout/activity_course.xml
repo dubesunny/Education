@@ -2,56 +2,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="20dp"
     tools:context=".Course">
 
+    <!-- Add/Edit Course Section -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="10dp"
-       >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="24dp">
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="16dp">
 
-            <!-- Name -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/coursename"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="16dp"
-                android:drawableStart="@drawable/baseline_menu_book_24"
-                android:drawablePadding="8dp"
                 android:hint="Course Name"
-                android:padding="12dp"
-                android:textColor="@color/black" />
+                android:padding="10dp" />
 
-            <!-- Status Spinner -->
             <Spinner
                 android:id="@+id/spinner_status"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="16dp"
-                android:spinnerMode="dropdown"/>
+                android:layout_marginTop="10dp" />
 
-            <!-- Add Button -->
             <Button
-                android:id="@+id/signup_button"
+                android:id="@+id/btnAddUpdate"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="24dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
                 android:text="ADD"
-                android:textSize="18sp"
                 android:backgroundTint="@color/lavender"
                 android:textColor="@android:color/white" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <!-- Course Table List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/courseRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 </LinearLayout>
