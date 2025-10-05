@@ -1,6 +1,7 @@
 package com.example.education;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +43,9 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
 
         // Edit button
         holder.btnEdit.setOnClickListener(v -> {
-            // TODO: Start Edit Activity with Intent extras
+            Intent intent = new Intent(context, Add_User.class);
+            intent.putExtra("USER_ID", user.getId());
+            context.startActivity(intent);
         });
 
         // Delete button

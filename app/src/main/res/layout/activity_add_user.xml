@@ -24,7 +24,7 @@
 
             <!-- Name -->
             <EditText
-                android:id="@+id/signup_name"
+                android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="16dp"
@@ -36,7 +36,7 @@
 
             <!-- Email -->
             <EditText
-                android:id="@+id/signup_email"
+                android:id="@+id/useremail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="16dp"
@@ -50,7 +50,7 @@
 
             <!-- Phone -->
             <EditText
-                android:id="@+id/signup_phone"
+                android:id="@+id/userphone"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="16dp"
@@ -64,7 +64,7 @@
 
             <!-- School Name -->
             <EditText
-                android:id="@+id/signup_schoolname"
+                android:id="@+id/userschool"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="16dp"
@@ -79,7 +79,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
-                    android:id="@+id/signup_password"
+                    android:id="@+id/userpassword"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="8dp"
@@ -104,7 +104,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
-                    android:id="@+id/signup_cpassword"
+                    android:id="@+id/usercpassword"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="16dp"
@@ -127,7 +127,7 @@
 
             <!-- Status Spinner -->
             <Spinner
-                android:id="@+id/spinner_status"
+                android:id="@+id/userstatus"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="16dp"
@@ -135,7 +135,7 @@
 
             <!-- Role Spinner -->
             <Spinner
-                android:id="@+id/spinner_role"
+                android:id="@+id/userrole"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="16dp"
@@ -143,7 +143,7 @@
 
             <!-- Add Button -->
             <Button
-                android:id="@+id/signup_button"
+                android:id="@+id/addBtn"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="24dp"
